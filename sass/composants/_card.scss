@@ -1,0 +1,14 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: $margin-card;
+    background-color: $color-background-card;
+    @include border-radius;
+}
+
+.card__img {
+    width: 100%;
+    object-fit: cover;
+    height: 275px;
+    @include border-radius(20px 20px 0 0);
+}
