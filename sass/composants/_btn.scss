@@ -1,0 +1,8 @@
+.btn {
+    padding: $padding-btn;
+    border: $border-btn;
+    border-radius: $border-radius-btn;
+    @include color-font-background;
+    box-shadow: $box-shadow-btn;
+    background-image: $background-image-btn;
+}

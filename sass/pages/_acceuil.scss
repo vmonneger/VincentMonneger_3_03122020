@@ -3,17 +3,78 @@
     padding-bottom: 30px;
 }
 
+.explorer-section {
+    background-color: $color-background;
+    display: flex;
+    height: 250px;
+}
+.explorer {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    &__description p {
+        color: $color-font-secondaire;
+    }
+}
 .la-localisation {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $color-background;
+    background-color: #eaeaea;
     color: $color-font-secondaire;
     &__nom {
         margin-left: 10px;
+    }
+    & p {
+        font-weight: 500;
     }
     .la-localisation__icon {
         height: 20px;
         text-align: center;
     }
+}
+
+.fonctionnement__titre {
+    margin: $margin-bord-du-site;
+}
+
+.fonctionnement__liste {
+    margin: $margin-bord-du-site;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.fonctionnement__number {
+    background-color: $color-primaire;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    @include color-font-background;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    position: absolute;
+}
+
+.fonctionnement__icon {
+    margin-right: 20px;
+}
+
+.fonctionnement__description {
+    margin-right: 20px;
+}
+
+.fonctionnement__background {
+    background-color: $color-background;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    margin-left: 15px;
+    border-radius: $border-radius-card;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }

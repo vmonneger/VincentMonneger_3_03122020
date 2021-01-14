@@ -14,7 +14,13 @@ $margin-bord-du-site: 0 15px;
 
 $border-radius-card: 20px 20px 20px 20px;
 
-@mixin color-font-background-footer {
+$padding-btn: 15px;
+$border-btn: none;
+$border-radius-btn: 27px;
+$box-shadow-btn: 0px 3px 8px rgba(0, 0, 0, 0.3);
+$background-image-btn: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+
+@mixin color-font-background {
     @if (lightness($color-background-footer) < 30% ) {
         color: white;
     }

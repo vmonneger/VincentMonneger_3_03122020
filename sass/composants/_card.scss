@@ -15,7 +15,7 @@ a {
     .card__img {
         width: 100%;
         object-fit: cover;
-        height: 275px;
+        height: 230px;
         @include border-radius(20px 20px 0 0);
     }
     .card__description {
