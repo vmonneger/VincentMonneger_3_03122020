@@ -2,3 +2,18 @@
     background-color: $color-background;
     padding-bottom: 30px;
 }
+
+.la-localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-background;
+    color: $color-font-secondaire;
+    &__nom {
+        margin-left: 10px;
+    }
+    .la-localisation__icon {
+        height: 20px;
+        text-align: center;
+    }
+}

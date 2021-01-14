@@ -16,6 +16,7 @@ h3 {
 p {
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
+  font-size: 18px;
 }
 
 body {
@@ -53,9 +54,11 @@ a:visited {
   font-size: 40px;
 }
 
-header {
+.header {
+  box-shadow: 0px 2px 4px 0px #d6d6d6;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 footer {
@@ -102,6 +105,21 @@ li p {
 .restaurants {
   background-color: #f6f6f6;
   padding-bottom: 30px;
+}
+
+.la-localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  color: #353535;
+}
+.la-localisation__nom {
+  margin-left: 10px;
+}
+.la-localisation .la-localisation__icon {
+  height: 20px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
