@@ -2,19 +2,22 @@ $color-primaire: #9356DC;
 $color-secondaire: #FF79DA;
 $color-tertiaire: #99E2D0;
 
+$color-font: black;
+
 $color-background: #f6f6f6;
 $color-background-card: white;
 $color-background-footer: #353535;
+
+$margin-card: 0 15px 30px;
+$margin-bord-du-site: 0 15px;
+
+$border-radius-card: 20px 20px 20px 20px;
 
 @mixin color-font-background-footer {
     @if (lightness($color-background-footer) < 30% ) {
         color: white;
     }
 }
-
-$margin-card: 0 15px 30px;
-
-$border-radius-card: 20px 20px 20px 20px;
 
 @mixin border-radius($border: $border-radius-card) {
     border-radius: $border;

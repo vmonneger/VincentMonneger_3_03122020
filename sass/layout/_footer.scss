@@ -2,5 +2,39 @@ footer {
     background-color: $color-background-footer;
     display: flex;
     flex-direction: column;
+    height: 215px;
     @include color-font-background-footer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li p {
+    margin: 0;
+}
+
+.footer {
+    margin: $margin-bord-du-site;
+    .footer__titre {
+        font-size: 10px;
+        font-weight: 100;
+        & h1 {
+            font-weight: 100;
+        }
+    }
+}
+
+.list-footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    .list-footer__icon {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+    .list-footer__titre p {
+        margin: 0;
+    }
 }

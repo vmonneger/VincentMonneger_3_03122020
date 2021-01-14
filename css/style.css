@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 h1 {
   font-family: "Shrikhand", cursive;
 }
@@ -10,14 +10,24 @@ h2 {
 
 h3 {
   font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
 p {
   font-family: "Roboto", sans-serif;
+  font-weight: lighter;
 }
 
 body {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
 }
 
 .card {
@@ -27,12 +37,20 @@ body {
   background-color: white;
   border-radius: 20px 20px 20px 20px;
 }
-
-.card__img {
+.card .card__img {
   width: 100%;
   object-fit: cover;
   height: 275px;
   border-radius: 20px 20px 0 0;
+}
+.card .card__description {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+}
+.card .card__icon {
+  font-size: 40px;
 }
 
 header {
@@ -44,7 +62,41 @@ footer {
   background-color: #353535;
   display: flex;
   flex-direction: column;
+  height: 215px;
   color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li p {
+  margin: 0;
+}
+
+.footer {
+  margin: 0 15px;
+}
+.footer .footer__titre {
+  font-size: 10px;
+  font-weight: 100;
+}
+.footer .footer__titre h1 {
+  font-weight: 100;
+}
+
+.list-footer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.list-footer .list-footer__icon {
+  margin-right: 10px;
+  font-size: 16px;
+}
+.list-footer .list-footer__titre p {
+  margin: 0;
 }
 
 .restaurants {
