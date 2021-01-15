@@ -40,10 +40,27 @@ a:visited {
   color: black;
 }
 
+.card-new {
+  position: relative;
+  top: 56px;
+  left: 251px;
+  background-color: #99E2D0;
+  color: #278870;
+  padding: 5px 8px 5px 8px;
+  display: inline-block;
+}
+.card-new p {
+  margin: 0;
+}
+
+.card-new-disabled {
+  opacity: 0;
+}
+
 .card {
   display: flex;
   flex-direction: column;
-  margin: 0 15px 30px;
+  margin: 0 15px;
   background-color: white;
   border-radius: 20px 20px 20px 20px;
 }
@@ -59,8 +76,16 @@ a:visited {
   padding: 0 20px;
   align-items: center;
 }
+.card .card__titre h3 {
+  margin: 0;
+  padding: 15px 0 5px;
+}
+.card p {
+  margin: 0;
+  padding: 0 0 15px;
+}
 .card .card__icon {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .header {
@@ -111,9 +136,22 @@ li p {
   margin: 0;
 }
 
-.restaurants {
-  background-color: #f6f6f6;
-  padding-bottom: 30px;
+.la-localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  color: #4a4a4a;
+}
+.la-localisation__nom {
+  margin-left: 10px;
+}
+.la-localisation p {
+  font-weight: 500;
+}
+.la-localisation .la-localisation__icon {
+  height: 20px;
+  text-align: center;
 }
 
 .explorer-section {
@@ -128,39 +166,22 @@ li p {
   margin-right: auto;
 }
 .explorer__description p {
-  color: #353535;
+  color: #4a4a4a;
 }
 
-.la-localisation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #eaeaea;
-  color: #353535;
+.fonctionnement-section {
+  padding: 30px 0 40px;
 }
-.la-localisation__nom {
-  margin-left: 10px;
-}
-.la-localisation p {
-  font-weight: 500;
-}
-.la-localisation .la-localisation__icon {
-  height: 20px;
-  text-align: center;
-}
-
-.fonctionnement__titre {
+.fonctionnement-section .fonctionnement__titre {
   margin: 0 15px;
 }
-
-.fonctionnement__liste {
+.fonctionnement-section .fonctionnement__liste {
   margin: 0 15px;
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
-
-.fonctionnement__number {
+.fonctionnement-section .fonctionnement__number {
   background-color: #9356DC;
   border-radius: 50%;
   width: 30px;
@@ -173,16 +194,7 @@ li p {
   margin-right: 20px;
   position: absolute;
 }
-
-.fonctionnement__icon {
-  margin-right: 20px;
-}
-
-.fonctionnement__description {
-  margin-right: 20px;
-}
-
-.fonctionnement__background {
+.fonctionnement-section .fonctionnement__laforme {
   background-color: #f6f6f6;
   display: flex;
   align-items: center;
@@ -192,6 +204,30 @@ li p {
   width: 100%;
   padding-bottom: 5px;
   padding-top: 5px;
+  box-shadow: 0px 4px 19px -14px;
+}
+.fonctionnement-section .fonctionnement__laforme3 {
+  background-color: #f2eafb;
+}
+.fonctionnement-section .fonctionnement__icon {
+  margin-right: 20px;
+  color: #4a4a4a;
+  font-size: 17px;
+}
+.fonctionnement-section .fonctionnement__icon3 {
+  color: #9356DC;
+}
+.fonctionnement-section .fonctionnement__description {
+  margin-right: 20px;
+}
+
+.restaurants-section {
+  background-color: #f6f6f6;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.restaurants-section__titre {
+  margin: 0 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

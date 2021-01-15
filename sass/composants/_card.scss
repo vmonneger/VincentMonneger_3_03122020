@@ -6,10 +6,27 @@ a {
     }
 }
 
+.card-new {
+    position: relative;
+    top: 56px;
+    left: 251px;
+    background-color: #99E2D0;
+    color: #278870;
+    padding: 5px 8px 5px 8px;
+    display: inline-block;
+    & p {
+        margin: 0;
+    }
+}
+
+.card-new-disabled {
+    opacity: 0;
+}
+
 .card {
     display: flex;
     flex-direction: column;
-    margin: $margin-card;
+    margin: $margin-bord-du-site;
     background-color: $color-background-card;
     @include border-radius;
     .card__img {
@@ -24,8 +41,16 @@ a {
         padding: 0 20px;
         align-items: center;
     }
+    .card__titre h3 {
+        margin: 0;
+        padding: 15px 0 5px;
+    }
+    & p {
+        margin: 0;
+        padding: 0 0 15px;
+    }
     .card__icon {
-        font-size: 40px;
+        font-size: 30px;
     }
 
 }

@@ -1,21 +1,3 @@
-.restaurants {
-    background-color: $color-background;
-    padding-bottom: 30px;
-}
-
-.explorer-section {
-    background-color: $color-background;
-    display: flex;
-    height: 250px;
-}
-.explorer {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    &__description p {
-        color: $color-font-secondaire;
-    }
-}
 .la-localisation {
     display: flex;
     justify-content: center;
@@ -34,47 +16,81 @@
     }
 }
 
-.fonctionnement__titre {
-    margin: $margin-bord-du-site;
-}
-
-.fonctionnement__liste {
-    margin: $margin-bord-du-site;
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.fonctionnement__number {
-    background-color: $color-primaire;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    @include color-font-background;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
-    position: absolute;
-}
-
-.fonctionnement__icon {
-    margin-right: 20px;
-}
-
-.fonctionnement__description {
-    margin-right: 20px;
-}
-
-.fonctionnement__background {
+.explorer-section {
     background-color: $color-background;
     display: flex;
-    align-items: center;
-    padding-left: 30px;
-    margin-left: 15px;
-    border-radius: $border-radius-card;
-    width: 100%;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    height: 250px;
 }
+.explorer {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    &__description p {
+        color: $color-font-secondaire;
+    }
+}
+
+.fonctionnement-section {
+    padding: 30px 0 40px;
+    .fonctionnement__titre {
+        margin: $margin-bord-du-site;
+    }
+    .fonctionnement__liste {
+        margin: $margin-bord-du-site;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .fonctionnement__number {
+        background-color: $color-primaire;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        @include color-font-background;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        position: absolute;
+    }
+    .fonctionnement__laforme {
+        background-color: $color-background;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        margin-left: 15px;
+        border-radius: $border-radius-card;
+        width: 100%;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        box-shadow: 0px 4px 19px -14px;
+    }
+    .fonctionnement__laforme3 {
+        background-color: lighten($color: $color-primaire, $amount: 35);
+    }
+    .fonctionnement__icon {
+        margin-right: 20px;
+        color: $color-font-secondaire;
+        font-size: 17px;
+    }
+    .fonctionnement__icon3 {
+        color: $color-primaire;
+    }
+    .fonctionnement__description {
+        margin-right: 20px;
+    }
+}
+
+.restaurants-section {
+    background-color: $color-background;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    &__titre {
+        margin: $margin-bord-du-site;
+    }
+}
+
+
+
+
