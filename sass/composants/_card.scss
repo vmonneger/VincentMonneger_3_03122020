@@ -11,15 +11,28 @@ a {
     flex-direction: column;
     margin: $margin-bord-du-site;
     background-color: $color-background-card;
-    @include border-radius;
+    box-shadow: 0px 7px 11px 0px #e4e4e4;
+    margin-bottom: 20px;
+    @include border-radius-card;
     .card__img {
-        width: 100%;
-        object-fit: cover;
-        height: 230px;
         background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-        object-fit: cover;
-        background-size: cover;
-        @include border-radius(20px 20px 0 0);
+        @include card-img;
+        @include border-radius-card(20px 20px 0 0);
+    }
+    .card__img2 {
+        background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+        @include card-img;
+        @include border-radius-card(20px 20px 0 0);
+    }
+    .card__img3 {
+        background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+        @include card-img;
+        @include border-radius-card(20px 20px 0 0);
+    }
+    .card__img4 {
+        background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+        @include card-img;
+        @include border-radius-card(20px 20px 0 0);
     }
     .card__new-container {
         text-align: end;
@@ -27,8 +40,7 @@ a {
         margin-right: 15px;
     }
     .card__new {
-        background-color: $color-tertiaire;
-        color: #278870;
+        @include color-new-card;
         padding: 5px 8px 5px 8px;
         display: inline-block;
         & p {
