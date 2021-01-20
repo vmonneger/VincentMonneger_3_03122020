@@ -4,5 +4,11 @@
     border-radius: $border-radius-btn;
     @include color-font-background;
     box-shadow: $box-shadow-btn;
-    background-image: $background-image-btn;
+    background: $background-image-btn;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+        background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), $background-image-btn;
+        box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.3);
+    }
 }

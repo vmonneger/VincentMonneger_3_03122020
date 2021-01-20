@@ -29,7 +29,13 @@ body {
   border-radius: 27px;
   color: white;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
-  background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  background: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn:hover {
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.3);
 }
 
 a {
@@ -108,8 +114,21 @@ a:visited {
 .card p {
   margin: 0;
 }
-.card .card__icon {
-  font-size: 30px;
+
+.like-icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+.like-icon .far {
+  transform: scaleY(1);
+  transition: transform 0.5s;
+}
+.like-icon:hover {
+  background: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  transform: scaleY(0);
 }
 
 .header {
@@ -222,15 +241,7 @@ li p {
   width: 100%;
   background-color: #f6f6f6;
   border-radius: 35px 35px 0 0;
-}
-
-.menu-header__titre {
-  margin: 0 15px;
-}
-
-.menu-header__icon {
-  margin-right: 30px;
-  font-size: 25px;
+  padding: 0 30px;
 }
 
 .plats {
@@ -292,7 +303,7 @@ li p {
 
 .underline {
   border-top: solid 3px #99E2D0;
-  width: 12%;
+  width: 45px;
   margin: 0 0 15px 15px;
 }
 

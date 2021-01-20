@@ -38,13 +38,7 @@
     width: 100%;
     background-color: $color-background;
     border-radius: 35px 35px 0 0;
-}
-.menu-header__titre {
-    margin: $margin-bord-du-site;
-}
-.menu-header__icon {
-    margin-right: 30px;
-    font-size: 25px;
+    padding: 0 30px;
 }
 
 .plats {
@@ -106,6 +100,6 @@
 
 .underline {
     border-top: solid 3px $color-tertiaire;
-    width: 12%;
+    width: 45px;
     margin: 0 0 15px 15px;
 }
