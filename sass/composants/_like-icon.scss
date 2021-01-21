@@ -5,13 +5,13 @@
 .like-icon .far {
     font-size: 25px;
     cursor: pointer;
-    z-index: -1;
     &:hover {
         background-image: $background-image-btn;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         &::after {
             opacity: 1;
+            transform: scaleY(1);
     }
 }
     &::after {
@@ -22,10 +22,10 @@
         font-weight: bold;
         opacity: 0;
         transition: opacity 0.2s;
+        transition: transform 0.5s;
         position: absolute;
         left: 0;
-        overflow: hidden;
-        z-index: 1;
+        transform: scaleY(0);
     }
 }    
 

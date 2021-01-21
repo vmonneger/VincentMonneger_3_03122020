@@ -122,7 +122,6 @@ a:visited {
 .like-icon .far {
   font-size: 25px;
   cursor: pointer;
-  z-index: -1;
 }
 .like-icon .far:hover {
   background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
@@ -131,6 +130,7 @@ a:visited {
 }
 .like-icon .far:hover::after {
   opacity: 1;
+  transform: scaleY(1);
 }
 .like-icon .far::after {
   content: "";
@@ -140,10 +140,10 @@ a:visited {
   font-weight: bold;
   opacity: 0;
   transition: opacity 0.2s;
+  transition: transform 0.5s;
   position: absolute;
   left: 0;
-  overflow: hidden;
-  z-index: 1;
+  transform: scaleY(0);
 }
 
 .header {
