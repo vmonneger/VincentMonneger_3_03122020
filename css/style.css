@@ -157,12 +157,12 @@ a:visited {
   background-color: RGBA(0, 0, 0, 0.7);
   position: absolute;
   z-index: 1;
-  animation: background-loading 1s;
+  animation: background-loading 2s;
   animation-fill-mode: forwards;
 }
 
 .loading-body {
-  animation: body 1s;
+  animation: body 2s;
 }
 
 @keyframes body {
