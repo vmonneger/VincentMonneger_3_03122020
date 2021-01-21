@@ -1,18 +1,33 @@
 .like-icon {
+    position: relative;
+}
+
+.like-icon .far {
     font-size: 25px;
     cursor: pointer;
-    & .far {
-        transform: scaleY(1);
-        transition: transform 0.5s;
-    }
+    z-index: -1;
     &:hover {
-        background: $background-image-btn;
+        background-image: $background-image-btn;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &::after {
+            opacity: 1;
+    }
+}
+    &::after {
+        content: "\f004";
+        background-image: $background-image-btn;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: bold;
-        transform: scaleY(0);
+        opacity: 0;
+        transition: opacity 0.2s;
+        position: absolute;
+        left: 0;
+        overflow: hidden;
+        z-index: 1;
     }
-}
+}    
 
 
 

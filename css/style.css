@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 h1 {
@@ -31,7 +32,6 @@ body {
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
   background: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   cursor: pointer;
-  transition: all 0.2s;
 }
 .btn:hover {
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
@@ -116,19 +116,34 @@ a:visited {
 }
 
 .like-icon {
+  position: relative;
+}
+
+.like-icon .far {
   font-size: 25px;
   cursor: pointer;
+  z-index: -1;
 }
-.like-icon .far {
-  transform: scaleY(1);
-  transition: transform 0.5s;
+.like-icon .far:hover {
+  background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.like-icon:hover {
-  background: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+.like-icon .far:hover::after {
+  opacity: 1;
+}
+.like-icon .far::after {
+  content: "";
+  background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  transform: scaleY(0);
+  opacity: 0;
+  transition: opacity 0.2s;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .header {
