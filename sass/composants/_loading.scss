@@ -1,0 +1,60 @@
+.loading {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: RGBA(0,0,0,0.7);
+    position: absolute;
+    z-index: 1;
+    animation: background-loading 1s;
+    animation-fill-mode: forwards;
+    // &__rond1 {
+    //     background-color: black;
+    //     width: 20px;
+    //     height: 20px;
+    //     border-radius: 50%;
+    //     position: absolute;
+    // }
+    // &__rond2 {
+    //     background-color: black;
+    //     width: 20px;
+    //     height: 20px;
+    //     border-radius: 50%;
+    //     position: absolute;
+    //     left: 10vh;
+    // }
+    // &__rond3 {
+
+    // }
+    // &__rond4 {
+
+    // }
+    // &__rond5 {
+
+    // }
+}
+
+
+.loading-body {
+    animation: body 1s;
+}
+
+@keyframes body {
+    0% {
+        opacity: 0;
+        height: 100vh;
+        overflow: hidden;
+    }
+    100% {
+        opacity: 1;
+        overflow: hidden;
+    }
+}
+
+@keyframes background-loading {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
