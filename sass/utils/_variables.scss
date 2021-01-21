@@ -39,6 +39,7 @@ $background-image-btn: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64d
     width: 100%;
     height: 230px;
     background-size: cover;
+    position: relative;
 }
 
 @mixin menu-header-img {
