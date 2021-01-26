@@ -149,37 +149,42 @@ a:visited {
   transform: scaleY(0);
 }
 
-.loading-container {
-  animation: loading-container 2s 150ms;
-}
-
 .loading {
-  overflow: hidden;
   width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: -1;
+  background-color: white;
   font-size: 20vw;
-  z-index: 1;
-  animation: background-loading 2s 150ms;
+  animation: loading-spinner 2150ms;
   animation-fill-mode: both;
 }
-
-@keyframes loading-container {
-  0% {
-    opacity: 0;
-    height: 100vh;
-    overflow: hidden;
-  }
-  100% {
-    opacity: 1;
-    overflow: hidden;
-  }
+.loading > i {
+  transform: rotate(360deg);
+  transition: 750ms;
+  background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-@keyframes background-loading {
+.loading__titre h1 {
+  font-size: 10vw;
+}
+
+@keyframes loading-spinner {
   0% {
     opacity: 1;
+    z-index: 1;
+  }
+  40% {
+    opacity: 1;
+    z-index: 1;
+  }
+  80% {
+    z-index: 1;
   }
   100% {
     opacity: 0;
