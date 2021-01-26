@@ -12,8 +12,7 @@
     animation: loading-spinner 2150ms;
     animation-fill-mode: both;
     & > i {
-        transform: rotate(360deg);
-        transition: 750ms;
+        animation: spin 1700ms;
         background-image: $background-image-btn;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -41,5 +40,11 @@
     100% {
         opacity: 0;
         
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(2turn);
     }
 }
