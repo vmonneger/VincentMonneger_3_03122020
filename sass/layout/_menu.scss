@@ -60,32 +60,32 @@
     margin: $margin-bord-du-site;
     margin-bottom: 15px;
     box-shadow: 0px 4px 19px -18px;
-    .menu-card__titre {
-        padding: 10px 0 0 10px;
-        & h3 {
-            margin: 0;
-        }
-    }
-    &__description {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-        max-width: 100%;
-    }
-    .menu-card__description-prix h3 {
+}
+.menu-card__titre {
+    padding: 10px 0 0 10px;
+    & h3 {
         margin: 0;
     }
-    .menu-card__description-titre {
-        max-width: 85%;
-    }
-    .menu-card__description-titre p {
-        margin: 0;
-        font-size: 16px;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-    }
+}
+.menu-card__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    max-width: 100%;
+}
+.menu-card__description-prix h3 {
+    margin: 0;
+}
+.menu-card__description-titre {
+    max-width: 85%;
+}
+.menu-card__description-titre p {
+    margin: 0;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .menu-btn {
@@ -102,4 +102,43 @@
     border-top: solid 3px $color-tertiaire;
     width: 45px;
     margin: 0 0 15px 15px;
+}
+
+@keyframes menu {
+    0% {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.menu-card--1 {
+    background-color: white;
+    border-radius: $border-radius-card;
+    margin: $margin-bord-du-site;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 19px -18px;
+    animation: menu 500ms ease-in-out;
+    animation-fill-mode: both;
+}
+.menu-card--2 {
+    background-color: white;
+    border-radius: $border-radius-card;
+    margin: $margin-bord-du-site;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 19px -18px;
+    animation: menu 500ms 200ms ease-in-out;
+    animation-fill-mode: both;
+}
+
+.menu-card--3 {
+    background-color: white;
+    border-radius: $border-radius-card;
+    margin: $margin-bord-du-site;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 19px -18px;
+    animation: menu 500ms 400ms ease-in-out;
+    animation-fill-mode: both;
 }
