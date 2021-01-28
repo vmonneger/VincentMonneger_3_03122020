@@ -390,7 +390,7 @@ li p {
   margin: 0 15px;
   margin-bottom: 15px;
   box-shadow: 0px 4px 19px -18px;
-  animation: menu 500ms ease-in-out;
+  animation: menu 500ms 200ms ease-in-out;
   animation-fill-mode: both;
 }
 
@@ -400,7 +400,7 @@ li p {
   margin: 0 15px;
   margin-bottom: 15px;
   box-shadow: 0px 4px 19px -18px;
-  animation: menu 500ms 200ms ease-in-out;
+  animation: menu 500ms 400ms ease-in-out;
   animation-fill-mode: both;
 }
 
@@ -410,7 +410,7 @@ li p {
   margin: 0 15px;
   margin-bottom: 15px;
   box-shadow: 0px 4px 19px -18px;
-  animation: menu 500ms 400ms ease-in-out;
+  animation: menu 500ms 600ms ease-in-out;
   animation-fill-mode: both;
 }
 
