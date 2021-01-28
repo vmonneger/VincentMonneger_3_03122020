@@ -149,17 +149,55 @@
 }
 
 .menu-card--1:hover .menu-card--animation {
-    background-color: red;
+    background-color: $color-tertiaire;
     transition: min-width 1s;
     min-width: 85px;
     border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after {
+        content: "\f00c";
+        font-size: 20px;
+        font-family: "Font Awesome 5 Free";
+        font-weight: bold;
+        background-color: white;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-tertiaire;
+        &:hover {
+            transform: rotate(360deg);
+            transition: transform 0.5s;
+        }
+    }
 }
 
 .menu-card--animation {
-    background-color: red;
+    background-color: $color-tertiaire;
     border-radius: 0 20px 20px 0;
     transition: min-width 1s;
     min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // &::after {
+    //     content: "\f00c";
+    //     font-size: 20px;
+    //     font-family: "Font Awesome 5 Free";
+    //     font-weight: bold;
+    //     background-color: white;
+    //     border-radius: 50%;
+    //     width: 30px;
+    //     height: 30px;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     color: $color-tertiaire;
+    // }
 }
 
 .menu-card1 {
@@ -168,16 +206,6 @@
     flex-grow: 2;
     justify-content: space-between;
     min-width: 0;
-}
-
-@keyframes hover {
-    from {
-        min-width: 0;
-
-    }
-    to {
-        min-width: 85px;
-    }
 }
 
 
