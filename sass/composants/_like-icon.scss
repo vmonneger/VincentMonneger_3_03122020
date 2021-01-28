@@ -11,7 +11,8 @@
         -webkit-text-fill-color: transparent;
         &::after {
             opacity: 1;
-            transform: scaleY(1);
+            transition: height 0.8s;
+            height: 100%;
     }
 }
     &::after {
@@ -20,11 +21,9 @@
         -webkit-background-clip: text;
         font-weight: bold;
         opacity: 0;
-        transition: opacity 0.2s;
-        transition: transform 0.5s;
         position: absolute;
         left: 0;
-        transform: scaleY(0);
+        height: 0;
     }
 }    
 
