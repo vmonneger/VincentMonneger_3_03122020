@@ -319,61 +319,59 @@ li p {
   margin: 0;
 }
 
-.menu-card {
-  background-color: white;
-  border-radius: 20px 20px 20px 20px;
-  margin: 0 15px;
-  margin-bottom: 15px;
-  box-shadow: 0px 4px 19px -18px;
+.underline {
+  border-top: solid 3px #99E2D0;
+  width: 45px;
+  margin: 0 0 15px 15px;
 }
 
-.menu-card__titre {
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: space-between;
+  min-width: 0;
+}
+.menu-card .menu-card__titre {
   padding: 10px 0 0 10px;
 }
-.menu-card__titre h3 {
+.menu-card .menu-card__titre h3 {
   margin: 0;
 }
-
-.menu-card__description {
+.menu-card .menu-card__description {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
-
-.menu-card__description-prix h3 {
-  margin: 0;
-}
-
-.menu-card__description-titre {
+.menu-card .menu-card__description-titre {
   max-width: 85%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-
-.menu-card__description-titre p {
+.menu-card .menu-card__description-titre p {
   margin: 0;
   font-size: 16px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
+.menu-card .menu-card__description-prix h3 {
+  margin: 0;
+}
 
-.menu-btn {
+.menu-card-all {
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  margin: 0 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 19px -18px;
   display: flex;
-  justify-content: center;
-  padding: 30px 0 80px 0;
-}
-
-.btn-width {
-  width: 60%;
-}
-
-.underline {
-  border-top: solid 3px #99E2D0;
-  width: 45px;
-  margin: 0 0 15px 15px;
+  position: relative;
+  overflow: hidden;
+  animation: menu 500ms 200ms ease-in-out;
+  animation-fill-mode: both;
 }
 
 @keyframes menu {
@@ -385,49 +383,16 @@ li p {
     opacity: 1;
   }
 }
-.menu-card--1 {
-  background-color: white;
-  border-radius: 20px 20px 20px 20px;
-  margin: 0 15px;
-  margin-bottom: 15px;
-  box-shadow: 0px 4px 19px -18px;
-  animation: menu 500ms 200ms ease-in-out;
-  animation-fill-mode: both;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-}
-
-.menu-card--2 {
-  background-color: white;
-  border-radius: 20px 20px 20px 20px;
-  margin: 0 15px;
-  margin-bottom: 15px;
-  box-shadow: 0px 4px 19px -18px;
-  animation: menu 500ms 400ms ease-in-out;
-  animation-fill-mode: both;
-}
-
-.menu-card--3 {
-  background-color: white;
-  border-radius: 20px 20px 20px 20px;
-  margin: 0 15px;
-  margin-bottom: 15px;
-  box-shadow: 0px 4px 19px -18px;
-  animation: menu 500ms 600ms ease-in-out;
-  animation-fill-mode: both;
-}
-
-.menu-card--1:hover .menu-card--animation {
+.menu-card--animation {
   background-color: #99E2D0;
-  transition: min-width 1s;
-  min-width: 85px;
   border-radius: 0 20px 20px 0;
+  transition: min-width 0.3s linear;
+  min-width: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.menu-card--1:hover .menu-card--animation::after {
+.menu-card--animation::after {
   content: "";
   font-size: 20px;
   font-family: "Font Awesome 5 Free";
@@ -440,28 +405,61 @@ li p {
   justify-content: center;
   align-items: center;
   color: #99E2D0;
-}
-.menu-card--1:hover .menu-card--animation::after:hover {
-  transform: rotate(360deg);
-  transition: transform 0.5s;
+  position: absolute;
+  animation: translate-invert 0.3s linear;
+  animation-fill-mode: both;
 }
 
-.menu-card--animation {
+.menu-card-all:hover .menu-card--animation {
   background-color: #99E2D0;
+  transition: min-width 0.3s linear;
+  min-width: 85px;
   border-radius: 0 20px 20px 0;
-  transition: min-width 1s;
-  min-width: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.menu-card1 {
+.menu-card-all:hover .menu-card--animation::after {
+  content: "";
+  font-size: 20px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
   display: flex;
-  flex-direction: column;
-  flex-grow: 2;
-  justify-content: space-between;
-  min-width: 0;
+  justify-content: center;
+  align-items: center;
+  color: #99E2D0;
+  animation: rotate 0.3s linear;
+  position: absolute;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes translate-invert {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(20px);
+  }
+}
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 80px 0;
+}
+
+.btn-width {
+  width: 60%;
 }
 
 .la-localisation {
