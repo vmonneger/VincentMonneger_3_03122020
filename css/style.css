@@ -159,7 +159,7 @@ a:visited {
   text-align: center;
   z-index: -1;
   background-color: white;
-  font-size: 20vw;
+  font-size: 10vh;
   animation: loading-spinner 2150ms;
   animation-fill-mode: both;
 }
@@ -170,7 +170,7 @@ a:visited {
   -webkit-text-fill-color: transparent;
 }
 .loading__titre h1 {
-  font-size: 10vw;
+  font-size: 5vh;
 }
 
 @keyframes loading-spinner {
