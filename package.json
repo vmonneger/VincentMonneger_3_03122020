@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "sass-dev": "sass --watch ./sass/main.scss:./css/style.css",
-    "sass-prod": "sass --watch ./sass/main.scss:./css/style.css --style compressed"
+    "sass-prod": "sass --watch ./sass/main.scss:./css/style.css --style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vmonneger/VincentMonneger_3_03122020.git"
   },
+  "browserslist": "last 4 versions",
   "author": "",
   "license": "ISC",
   "bugs": {
