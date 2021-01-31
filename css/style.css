@@ -57,7 +57,7 @@ a:visited {
   border-radius: 20px 20px 20px 20px;
 }
 .card .card__img {
-  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   width: 100%;
   height: 230px;
   background-size: cover;
@@ -65,7 +65,7 @@ a:visited {
   border-radius: 20px 20px 0 0;
 }
 .card .card__img2 {
-  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
   width: 100%;
   height: 230px;
   background-size: cover;
@@ -73,7 +73,7 @@ a:visited {
   border-radius: 20px 20px 0 0;
 }
 .card .card__img3 {
-  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   width: 100%;
   height: 230px;
   background-size: cover;
@@ -81,7 +81,7 @@ a:visited {
   border-radius: 20px 20px 0 0;
 }
 .card .card__img4 {
-  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   width: 100%;
   height: 230px;
   background-size: cover;
@@ -281,7 +281,7 @@ li p {
 }
 
 .menu-header__photo {
-  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   height: 300px;
   background-size: cover;
   width: 100%;
@@ -290,7 +290,7 @@ li p {
 }
 
 .menu-header__photo2 {
-  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
   height: 300px;
   background-size: cover;
   width: 100%;
@@ -299,7 +299,7 @@ li p {
 }
 
 .menu-header__photo3 {
-  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   height: 300px;
   background-size: cover;
   width: 100%;
@@ -308,7 +308,7 @@ li p {
 }
 
 .menu-header__photo4 {
-  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   height: 300px;
   background-size: cover;
   width: 100%;
