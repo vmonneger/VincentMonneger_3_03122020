@@ -390,14 +390,53 @@ li p {
   display: flex;
   position: relative;
   overflow: hidden;
-  animation: menu 500ms 200ms ease-in-out;
   animation-fill-mode: both;
+  animation: menu 900ms ease-in-out;
+}
+
+.menu-card-all2 {
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  margin: 0 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 19px -18px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  animation-fill-mode: both;
+  animation: menu 1200ms ease-in-out;
+}
+
+.menu-card-all3 {
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  margin: 0 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 19px -18px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  animation-fill-mode: both;
+  animation: menu 1500ms ease-in-out;
+}
+
+.menu-card-all4 {
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  margin: 0 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 19px -18px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  animation-fill-mode: both;
+  animation: menu 1800ms ease-in-out;
 }
 
 @keyframes menu {
-  0% {
-    transform: translateY(10%);
+  0%, 45% {
     opacity: 0;
+    transform: translateY(10%);
   }
   100% {
     opacity: 1;
@@ -456,6 +495,84 @@ li p {
   position: absolute;
 }
 
+.menu-card-all2:hover .menu-card--animation {
+  background-color: #99E2D0;
+  transition: min-width 0.3s linear;
+  min-width: 85px;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-card-all2:hover .menu-card--animation::after {
+  content: "";
+  font-size: 20px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #99E2D0;
+  animation: rotate 0.3s linear;
+  position: absolute;
+}
+
+.menu-card-all3:hover .menu-card--animation {
+  background-color: #99E2D0;
+  transition: min-width 0.3s linear;
+  min-width: 85px;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-card-all3:hover .menu-card--animation::after {
+  content: "";
+  font-size: 20px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #99E2D0;
+  animation: rotate 0.3s linear;
+  position: absolute;
+}
+
+.menu-card-all4:hover .menu-card--animation {
+  background-color: #99E2D0;
+  transition: min-width 0.3s linear;
+  min-width: 85px;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-card-all4:hover .menu-card--animation::after {
+  content: "";
+  font-size: 20px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #99E2D0;
+  animation: rotate 0.3s linear;
+  position: absolute;
+}
+
 @keyframes rotate {
   from {
     transform: rotate(0);
@@ -465,10 +582,10 @@ li p {
   }
 }
 @keyframes translate-invert {
-  from {
+  0% {
     transform: translate(0);
   }
-  to {
+  100% {
     transform: translate(20px);
   }
 }

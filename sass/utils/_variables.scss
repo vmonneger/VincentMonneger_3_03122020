@@ -60,7 +60,6 @@ $background-image-btn: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64d
     display: flex;
     position: relative;
     overflow: hidden;
-    animation: menu 500ms 200ms ease-in-out;
     animation-fill-mode: both;
 }
 
@@ -99,6 +98,7 @@ $background-image-btn: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64d
     color: $color-tertiaire;
     animation: rotate 0.3s linear;
     position: absolute;
+
 }
 
 @mixin mouseout-icon-animation {
@@ -117,5 +117,6 @@ $background-image-btn: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64d
     position: absolute;
     animation: translate-invert 0.3s linear;
     animation-fill-mode: both;
+
 }
 
