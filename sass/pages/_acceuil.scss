@@ -93,23 +93,41 @@
 
 @media screen and (min-width: 460px) {
     .fonctionnement-all {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
     }
     .fonctionnement__description {
         padding-right: 15px;
     }
 }
-
+@media screen and (min-width: 600px) {
+    .card-acceuil {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer__list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer__titre {
+        margin-bottom: 35px;
+        text-align: center;
+    }
+    .list-footer {
+        margin-right: 40px;
+    }
+}
 @media screen and (min-width: 765px) {
     .fonctionnement-all {
-        flex-wrap: nowrap;
+        display: flex;
     }
 }
 
-@media screen and (min-width: 1020px) {
-
+@media screen and (min-width: 1200px) {
+    .card-acceuil{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 
