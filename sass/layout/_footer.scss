@@ -29,11 +29,16 @@ li p {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    .list-footer__icon {
+    &__icon {
         margin-right: 10px;
         font-size: 16px;
     }
-    .list-footer__titre p {
+    &__titre p {
         margin: 0;
     }
+    & a {
+        text-decoration: none;
+        color: inherit;
+    }
 }
+

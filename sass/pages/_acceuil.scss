@@ -91,6 +91,27 @@
     }
 }
 
+@media screen and (min-width: 460px) {
+    .fonctionnement-all {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .fonctionnement__description {
+        padding-right: 15px;
+    }
+}
+
+@media screen and (min-width: 765px) {
+    .fonctionnement-all {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+
+}
+
 
 
 
