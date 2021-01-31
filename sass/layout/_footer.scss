@@ -42,3 +42,17 @@ li p {
     }
 }
 
+@media screen and (min-width: 600px) {
+    .footer__list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer__titre {
+        margin-bottom: 35px;
+        text-align: center;
+    }
+    .list-footer {
+        margin-right: 40px;
+    }
+}
+

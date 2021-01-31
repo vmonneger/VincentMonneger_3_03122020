@@ -152,3 +152,27 @@
     width: 60%;
 }
 
+@media screen and (min-width: 550px) {
+    .menu-header__photo, .menu-header__photo2, .menu-header__photo3, .menu-header__photo4 {
+        height: 55vw;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .plats {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .menu-header__description {
+        justify-content: flex-start;
+    }
+    .menu-header__titre {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1665px) {
+    .menu-header__photo, .menu-header__photo2, .menu-header__photo3, .menu-header__photo4 {
+        height: 94vh;
+    }
+}
