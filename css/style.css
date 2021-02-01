@@ -14,6 +14,11 @@ h3 {
   font-weight: bold;
 }
 
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
@@ -33,6 +38,8 @@ body {
   background: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   cursor: pointer;
   outline: none;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
 }
 .btn:hover {
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
